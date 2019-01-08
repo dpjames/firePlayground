@@ -1,0 +1,19 @@
+<html lang="en" style="margin:0;">
+   <head>
+      <meta name="description" content="David James Cell Auto">
+      <meta name="author" content="David James">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <script src="gol.js"></script>
+   </head>
+   <body onload="getData()" style="margin:0;">
+      <canvas id="view" xcells="1000" ycells="1000" 
+              height="1000px" width="1000px" 
+              style="position:absolute; top:0; left:0;width:100%;height:90%;"></canvas>
+      <button 
+         style="position:absolute; bottom:0; left:0"
+         onclick="toggleRunning()"> start/stop </button>
+      <input 
+         style="position:absolute; bottom:0; right:0"
+         id="ups" type="range" min="1" max="100" value="60">
+   </body>
+</html>
